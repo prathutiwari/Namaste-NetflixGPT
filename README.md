@@ -2,7 +2,15 @@
 
      - Create React App
      - Configured TailwindCSS
-
+     - Created public and private folder 
+     - Created login, header, body components
+     - Set up Routing using react-router-dom
+     - Import React Provider and pass appRouter to it.
+     - Header Completed
+     - Sign In Form
+     - Sign Up Form
+     
+     
 
 
 
