@@ -1,8 +1,11 @@
 import React from 'react'
+import HeaderPrivate from './HeaderPrivate'
 
 const Browse = () => {
   return (
-    <div>Browse</div>
+    <div>
+      <HeaderPrivate/>
+    </div>
   )
 }
 

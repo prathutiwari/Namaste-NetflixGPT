@@ -11,7 +11,25 @@
      - Sign Up Form
      - Form Validation
      - useRef Hook
-     
+     - Created a Project in Google Firebase (Using this for Authentication).
+     - Created a firebase configurations file inside utils
+     - Enable Email/Password from firebase console
+     - Login Firebase from terminal 
+     - npm run build to build our project
+     - Initialize Firebase using command => firebase login ==> firebase init ==> firebase deploy
+     - Project deployed
+     - import getAuth from firebase docs.
+     - Implemented Sign Up user account
+     - Implemented Sign In user account
+     - Set Up a Redux store using (npm i -D @reduxjs/toolkit  &&  npm i react-redux)
+     - Implemented store and userSlice file
+     - Provide store to route of App.
+     - User can now login and will be redirected to stream page.
+     - Install flaticons
+     - Implemented Sign out user 
+     - Implemented update profile
+     - 
+
 
      
 
