@@ -28,6 +28,8 @@
      - Install flaticons
      - Implemented Sign out user 
      - Implemented update profile
+     - Bug Fix: If user is not logged in redirect to login page and if user loggedin redirect to stream page everytime.
+     - Unsubscribed to onAuthStateChanged callback.
      - 
 
 

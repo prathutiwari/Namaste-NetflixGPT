@@ -1,13 +1,12 @@
 import React, { useRef, useState } from "react"
-import Header from "./Header"
 import home_bg from "../../assets/images/home_bg.jpg"
 import { checkValidData } from "../../utils/validate"
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import user_Profile from '../../assets/images/user_icon.png'
 import { useDispatch } from "react-redux";
 import { addUser } from "../../utils/userSlice";
+import HeaderPrivate from "../private_pages/HeaderPrivate";
 
 const Login = () => {
      /** Here we can take input vaalue in two ways either using useState hook and set its value to input or other one we are using here is useRef */
@@ -16,7 +15,6 @@ const Login = () => {
      const email = useRef(null);
      const password = useRef(null);
      const [errorMsg, setErrorMsg] = useState(null);
-     const navigate = useNavigate();
      const dispatch = useDispatch();
 
      const handleAuthFormBtnClick = () => {
@@ -45,7 +43,6 @@ const Login = () => {
                                    name: displayName,
                                    photoURL: photoURL
                               }));
-                              navigate('/stream');
                          }).catch((error) => {
                               setErrorMsg(error.message)
                          });
@@ -65,11 +62,8 @@ const Login = () => {
                )
                     .then((userCredential) => {
                          const user = userCredential.user;
-                         navigate('/stream');
-                         console.log(user)
                     })
                     .catch((error) => {
-                         console.log(error.response)
                          const errorCode = error.code;
                          const errorMessage = error?.message;
                          setErrorMsg(errorCode + ": " + errorMessage);
@@ -82,7 +76,7 @@ const Login = () => {
      }
      return (
           <div className="relative w-full min-h-[100vh] flex items-center">
-               <Header />
+               <HeaderPrivate />
                <img src={home_bg} alt="Netflix Banner" className="absolute w-full min-h-[100vh] h-[-webkit-fill-available] object-cover" />
 
                {/* Overlay */}
