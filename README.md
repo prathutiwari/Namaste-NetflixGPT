@@ -1,4 +1,4 @@
-# Namaste NetFlix
+# Namaste NetFlix => tmdb API will not work in JIO connection, either use VPN or have other connection.
 
      - Create React App
      - Configured TailwindCSS
@@ -30,7 +30,18 @@
      - Implemented update profile
      - Bug Fix: If user is not logged in redirect to login page and if user loggedin redirect to stream page everytime.
      - Unsubscribed to onAuthStateChanged callback.
-     - 
+     - Register TMDB API & create an app & get access token
+     - Get data from TMDB now playing movies list API
+     - add movie data in moviesSlice in redux store
+     - Created a custom hook "useNowPlayingMovies" and call API from there.
+     - created movieSlice
+     - Updated the store with movies data
+     - planning for man and secondary container
+     - Fetch Data for trailer video data
+     - Update store with trailer video data
+     - Embedded the youtube video and make it autoplay and mute
+     - Tailwind classes to make main container look good
+     
 
 
      
