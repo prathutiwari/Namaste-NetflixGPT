@@ -1,15 +1,17 @@
 import React from 'react';
 import HeaderPrivate from './HeaderPrivate';
-import useNowPlayingMovies from '../../../src/hooks/useNowPlayingMovies';
+import useNowPlayingMovies from '../../hooks/useNowPlayingMovies';
 import MainContainer from './MainContainer';
 import SecondaryContainer from './SecondaryContainer';
+import usePopularMovies from '../../hooks/usePopularMovies';
 
 const Browse = () => {
 
   useNowPlayingMovies();
+  usePopularMovies();
 
   return (
-    <div>
+    <div className='bg-[#141414] text-white'>
       <HeaderPrivate />
       <div>
         <MainContainer />
@@ -18,9 +20,6 @@ const Browse = () => {
 
 
       {/* 
-        - main Container
-          - Video Background
-          - Video title
         - secondary container
           - Movies list * N
             -card * N

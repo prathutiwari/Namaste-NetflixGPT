@@ -47,7 +47,7 @@ const HeaderPrivate = () => {
 
       {
         user &&
-        <div className='fixed py-2 px-8 bg-black bg-opacity-60 z-10 w-full'>
+        <div className='fixed py-2 px-8 bg-black bg-opacity-70 z-10 w-full'>
           <div className='flex items-center justify-between'>
             <img src={logo} alt='Logo' className='w-[120px]' />
             {

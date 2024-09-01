@@ -41,10 +41,8 @@
      - Update store with trailer video data
      - Embedded the youtube video and make it autoplay and mute
      - Tailwind classes to make main container look good
-     
+     - Creating Movies suggestions list
 
-
-     
 
 
 
