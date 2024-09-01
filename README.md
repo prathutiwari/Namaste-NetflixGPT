@@ -42,6 +42,9 @@
      - Embedded the youtube video and make it autoplay and mute
      - Tailwind classes to make main container look good
      - Creating Movies suggestions list
+     - Build Movie List
+     - Build Movie card
+     - Made Browse page responsive and make custom hooks
 
 
 
