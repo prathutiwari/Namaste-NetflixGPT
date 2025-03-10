@@ -45,6 +45,8 @@
      - Build Movie List
      - Build Movie card
      - Made Browse page responsive and make custom hooks
+     - GPT search Feature
+     - GPT Page option in Private header
 
 
 
