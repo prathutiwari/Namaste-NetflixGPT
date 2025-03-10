@@ -88,7 +88,7 @@ const Login = () => {
                          {signUpForm ? 'Sign Up' : 'Sign In'}
                     </h1>
 
-                    <p className="text-sm text-white"><span className="text-red-500">Warning:</span> This application may not function properly when accessed via the Jio network, as the TMDB API is not supported. Please use an alternative network for the best experience.</p>
+                    <p className="text-xs text-white"><span className="text-red-500">Warning:</span> This application may not function properly when accessed via the Jio network, as the TMDB API is not supported. Please use an alternative network for the best experience.</p>
 
                     {signUpForm && <input type="text" ref={userName} className="px-2 py-[7px] text-[16px] my-2 w-full bg-[#222] border-white border-[1px] rounded-sm text-white" placeholder="Full Name" />}
 
